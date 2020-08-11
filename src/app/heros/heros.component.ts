@@ -15,7 +15,13 @@ export class HerosComponent implements OnInit {
   };*/
 
   heros = HEROS;
-  selectedHero: Hero;
+  /*selectedHero: Hero = HEROS[0];
+  If we wish we can assign a predefined value to the 
+  selectedHero object rather than going for *ngIf.*/
+
+  //Just declaring selectedHero. For *ngIf
+
+  selectedHero: Hero ;
 
   constructor() { }
 
@@ -24,6 +30,7 @@ export class HerosComponent implements OnInit {
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
+    console.log("Value of Selected Hero:"+this.selectedHero.id+" "+this.selectedHero.name);
   }
 
 }
