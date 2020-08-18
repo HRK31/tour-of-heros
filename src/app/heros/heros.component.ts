@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
 import {  Hero } from "../hero";
-import { HEROS } from "../mock-heros";
 import { HeroService } from "../hero.service";
 
 @Component({
@@ -15,7 +15,7 @@ export class HerosComponent implements OnInit {
     name: 'Windstorm'
   };*/
 
-  heros = HEROS;
+  heros : Hero[];
   /*selectedHero: Hero = HEROS[0];
   If we wish we can assign a predefined value to the 
   selectedHero object rather than going for *ngIf.*/
