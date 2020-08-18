@@ -34,4 +34,8 @@ export class HerosComponent implements OnInit {
     console.log("Value of Selected Hero:"+this.selectedHero.id+" "+this.selectedHero.name);
   }
 
+  getHeros():void {
+    this.heros = this.heroservice.getHeros();
+  }
+
 }
